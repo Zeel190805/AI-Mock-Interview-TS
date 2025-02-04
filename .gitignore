@@ -25,4 +25,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 >>>>>>> c9ad5e4 (changes: project setup complated with shadcn ui)
+=======
+
+# environmental variables
+.env
+.env.*
+>>>>>>> 70e4373 (changes: clerk authentication  & routing setup completed)
