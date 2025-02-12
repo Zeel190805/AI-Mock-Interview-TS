@@ -8,6 +8,7 @@ export const PublicLayout = () => {
     <div className="w-full">
       {/* {handles to store user data} */}
       <AuthHandler />
+      
       <Header/>
 
       <Outlet/>
