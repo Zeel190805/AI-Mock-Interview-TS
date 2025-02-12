@@ -33,3 +33,6 @@ dist-ssr
 .env
 .env.*
 >>>>>>> 70e4373 (changes: clerk authentication  & routing setup completed)
+
+.env.local
+node_modules
