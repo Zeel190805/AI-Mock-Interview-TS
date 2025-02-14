@@ -8,6 +8,8 @@ import { MainLayout } from "./layouts/main-layout";
 import { SignInPage } from "@/routes/sign-in";
 import { SignUpPage } from "@/routes/sign-up";
 import { HomePage } from "./routes/home";
+import { Generate } from "./components/generate";
+import { Dashboard } from "./routes/dashboard";
 
 
 const App = () => {
@@ -26,9 +28,14 @@ const App = () => {
         </Route>
 
         {/* {protected routes} */}
-        <Route element={<ProtectedRoutes><MainLayout /></ProtectedRoutes>}>
+        <Route element={<ProtectedRoutes><MainLayout /></ProtectedRoutes>}
+        >
 
-        {/* {add all the protected routes} */}
+          {/* {add all the protected routes} */}
+          
+          <Route element={<Generate />} path="/generate">
+            <Route index element={<Dashboard />} />
+          </Route>
         </Route>
       </Routes>
     </Router>
