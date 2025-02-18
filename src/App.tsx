@@ -10,36 +10,35 @@ import { SignUpPage } from "@/routes/sign-up";
 import { HomePage } from "./routes/home";
 import { Generate } from "./components/generate";
 import { Dashboard } from "./routes/dashboard";
-
+import { CreateEditPage } from "./routes/create-edit-page";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        {/* {public routes} */}
+        {/* Public routes */}
         <Route element={<PublicLayout />}>
           <Route index element={<HomePage />} />
         </Route>
 
-        {/* {authentication Layout} */}
+        {/* Authentication Layout */}
         <Route element={<AuthenticationLayout />}>
-          <Route path="/signin/*" element={<SignInPage />} />
-          <Route path="/signup/*" element={<SignUpPage />} />
+          <Route path="/signin" element={<SignInPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
         </Route>
 
-        {/* {protected routes} */}
-        <Route element={<ProtectedRoutes><MainLayout /></ProtectedRoutes>}
-        >
-
+        {/* Protected routes */}
+        <Route element={<ProtectedRoutes><MainLayout /></ProtectedRoutes>}>
+        
           {/* {add all the protected routes} */}
-          
-          <Route element={<Generate />} path="/generate">
+          <Route path="/generate" element={<Generate />} >
             <Route index element={<Dashboard />} />
+            <Route path=":interviewId" element={<CreateEditPage />} />
           </Route>
         </Route>
       </Routes>
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App; 
