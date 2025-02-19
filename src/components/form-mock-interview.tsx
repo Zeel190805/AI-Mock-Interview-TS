@@ -1,9 +1,10 @@
+import { Interview } from "@/types";
 
-interface FormMockInterview {
+interface FormMockInterviewProps {
     initialData: Interview | null;
   }
 
-export const FormMockInterview = () => {
+export const FormMockInterview = ({ initialData } : FormMockInterviewProps) => {
   return (
     <div>FormMockInterview</div>
   )
