@@ -96,11 +96,6 @@ export const Footer = () => {
                 hoverColor="text-blue-500"
               />
               <SocialLink
-                href="https://twitter.com"
-                icon={<Twitter size={24} />}
-                hoverColor="text-blue-400"
-              />
-              <SocialLink
                 href="https://instagram.com"
                 icon={<Instagram size={24} />}
                 hoverColor="text-pink-500"
