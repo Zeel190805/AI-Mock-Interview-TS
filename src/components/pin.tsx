@@ -1,19 +1,17 @@
 import { Interview } from "@/types"
 import { useAuth } from "@clerk/clerk-react";
 import { useState } from "react";
-import { data, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import {
     Card,
-    CardContent,
     CardDescription,
     CardFooter,
-    CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 import { Badge } from "./ui/badge";
 import { cn } from "@/lib/utils";
 import { TooltipButton } from "./tooltip-button";
-import { Eye, Newspaper, Pencil, Sparkles, Trash2 } from "lucide-react";
+import { Eye, Newspaper, Sparkles, Trash2 } from "lucide-react";
 import { collection, doc, getDocs, query, where, writeBatch } from "firebase/firestore";
 import { db } from "@/config/firebase.config";
 import { toast } from "sonner";
