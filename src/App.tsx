@@ -13,6 +13,7 @@ import { Dashboard } from "./routes/dashboard";
 import { CreateEditPage } from "./routes/create-edit-page";
 import { MockLoadPage } from "./routes/mock-load-page";
 import { MockInterviewPage } from "./routes/mock-interview-page";
+import { Feedback } from "./routes/feedback";
 
 
 const App = () => {
@@ -32,7 +33,7 @@ const App = () => {
 
         {/* Protected routes */}
         <Route element={<ProtectedRoutes><MainLayout /></ProtectedRoutes>}>
-        
+
           {/* {add all the protected routes} */}
           <Route path="/generate" element={<Generate />} >
             <Route index element={<Dashboard />} />
@@ -42,6 +43,7 @@ const App = () => {
               path="interview/:interviewId/start"
               element={<MockInterviewPage />}
             />
+            <Route path="feedback/:interviewId" element={<Feedback />} />
           </Route>
         </Route>
       </Routes>
