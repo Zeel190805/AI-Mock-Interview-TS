@@ -66,13 +66,55 @@ export const HomePage = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
               distinctio natus, quos voluptatibus magni sapiente.
             </p>
-
-            <Button className="mt-3">
-              Generate <Sparkles />
-            </Button>
+            <Link to={"/generate"}>
+              <Button className="mt-3">
+                Generate <Sparkles />
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>
+
+      {/* How It Works */}
+      <section className="py-16 bg-gray-50">
+          <div className="container px-4 md:px-6 ">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter">How It Works</h2>
+              <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                Get started with AI Mock Interview in just a few simple steps
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="bg-primary/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary font-bold text-xl">1</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Select Your Interview Type</h3>
+                <p className="text-muted-foreground">
+                  Choose from various interview types based on your target role and industry.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="bg-primary/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary font-bold text-xl">2</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Practice with AI</h3>
+                <p className="text-muted-foreground">
+                  Engage in a realistic interview conversation with our advanced AI interviewer.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="bg-primary/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary font-bold text-xl">3</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Review and Improve</h3>
+                <p className="text-muted-foreground">
+                  Get instant feedback and actionable tips to improve your interview performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
       {/* marquee section */}
 

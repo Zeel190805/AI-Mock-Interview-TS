@@ -62,7 +62,7 @@ export const MockLoadPage = () => {
             />
 
             <Link to={`/generate/interview/${interviewId}/start`}>
-                <Button size={"sm"}>
+                <Button size={"sm"} >
                     Start <Sparkles />
                 </Button>
             </Link>

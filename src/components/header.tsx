@@ -19,7 +19,7 @@ const Header = () => {
         <LogoContainer />
 
         {/* {navigation section} */}
-        <nav className="hidden md:flex items-center gap-3">
+        <nav className="hidden md:flex items-center gap-8 ml-6">
           <NavigationRoutes />
           {userId && (
             <NavLink

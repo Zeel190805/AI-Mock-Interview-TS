@@ -8,7 +8,7 @@ interface NavigationRoutesProps {
 
 export const NavigationRoutes = ({ isMobile = false }: NavigationRoutesProps) => {
     return (
-        <ul className={cn("flex items-center gap-6",isMobile && "items-start flex-col gap-8")}>
+        <ul className={cn("flex items-center gap-9 ",isMobile && "items-start flex-col gap-8")}>
             {MainRoutes.map((route) => (
                 <NavLink 
                     key={route.href} 

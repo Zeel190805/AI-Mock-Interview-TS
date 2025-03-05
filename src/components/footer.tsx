@@ -69,26 +69,12 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Third Column: Services */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Services</h3>
-            <ul>
-              <FooterLink to="/services/interview-prep">
-                Interview Preparation
-              </FooterLink>
-              <FooterLink to="/services/career-coaching">
-                Career Coaching
-              </FooterLink>
-              <FooterLink to="/services/resume-building">
-                Resume Building
-              </FooterLink>
-            </ul>
-          </div>
+          
 
           {/* Fourth Column: Address and Social Media */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Contact Us</h3>
-            <p className="mb-4">123 AI Street, Tech City, 12345</p>
+          <div className="ml-28">
+            <h3 className="font-bold text-lg  mb-4">Contact Us</h3>
+            <p className="mb-4">Charusat University , Anand ,<br></br>Gujarat , India , 388421</p>
             <div className="flex gap-4">
               <SocialLink
                 href="https://facebook.com"
@@ -96,12 +82,12 @@ export const Footer = () => {
                 hoverColor="text-blue-500"
               />
               <SocialLink
-                href="https://instagram.com"
+                href="https://www.instagram.com/_jeel_barvaliya_1985?igsh=MXJmdG93MWdsZHJ6eQ=="
                 icon={<Instagram size={24} />}
                 hoverColor="text-pink-500"
               />
               <SocialLink
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/zeel-barvaliya-7a5797274"
                 icon={<Linkedin size={24} />}
                 hoverColor="text-blue-700"
               />
