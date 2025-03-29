@@ -59,7 +59,7 @@ An AI-powered mock interview platform built using **Next.js (TypeScript), Fireba
    ```bash
    npm run dev
    ```
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open [http://localhost:3000](http://localhost:5173) in your browser.
 
 ## 📸 Screenshots
 ![Login Page](/public/assets/screenshot/UI1.png)
