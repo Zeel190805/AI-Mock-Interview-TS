@@ -63,6 +63,8 @@ An AI-powered mock interview platform built using **Next.js (TypeScript), Fireba
 
 ## 📸 Screenshots
 ![Login Page](/public/assets/screenshot/UI1.png)
+![dashboard page](/public/assets/screenshot/dashboard.png)
+![feedback page](/public/assets/screenshot/feedback.png)
 
 
 ## 🚀 Deployment
