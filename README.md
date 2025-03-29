@@ -62,7 +62,8 @@ An AI-powered mock interview platform built using **Next.js (TypeScript), Fireba
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📸 Screenshots
-_Add screenshots of your UI here._
+![Login Page](screenshots/UI1.png)
+
 
 ## 🚀 Deployment
 - Deploy using **Vercel**:
